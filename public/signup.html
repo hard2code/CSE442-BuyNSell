@@ -26,26 +26,27 @@
         <!--Signup Section-->
         <section id="signup">
             <div class="container">
-                <form>
+
+                <form action="/user_create" method="POST">
                     <div>
                         <label>Name</label>
-                        <input type="text" name="name" placeholder="Your name">
+                        <input type="text" name="create_name" placeholder="Your name">
                     </div>
                     <div>
                         <label>ID</label>
-                        <input type="text" name="id" placeholder="Your id">
+                        <input type="text" name="create_ID" placeholder="Your id">
                     </div>
                     <div>
                         <label>Password</label>
-                        <input type="text" name="password" placeholder="Password">
+                        <input type="text" name="create_password" placeholder="Password">
                     </div>
                     <div>
                         <label>Email</label>
-                        <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="create_email" placeholder="Your email">
                     </div>
                     <div>
                         <label>Age</label>
-                        <input type="number" name="age" placeholder="Your age">
+                        <input type="number" name="create_age" placeholder="Your age">
                     </div>
                     <button class="button_1" type="submit">Register</button>
                 </form>

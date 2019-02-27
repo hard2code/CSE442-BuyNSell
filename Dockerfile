@@ -12,6 +12,11 @@ RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
+#npm form packages
+RUN npm i bodyparser
+RUN npm install raw-body
+RUN npm i password-hash
+
 # Bundle app source
 ADD . .
 
