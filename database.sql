@@ -3,7 +3,13 @@ user_id serial primary key,
 ubid varchar(12) unique not null,
 email varchar(50) unique not null,
 username varchar(50) unique not null,
-password varchar(50) not null
+password varchar(60) not null
+first_name varchar(50) not null,
+last_name varchar(50) not null,
+address varchar(50) not null,
+city varchar(20) not null,
+zip varchar(10) not null,
+state varchar(10) not null
 );
 
 create table items(
@@ -11,6 +17,7 @@ item_id serial primary key,
 time_post timestamp default current_timestamp,
 description text,
 availability boolean not null default 't',
+price int,
 post_by int references user_profile(user_id)
 );
 
